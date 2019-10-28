@@ -15,4 +15,10 @@
 15-> git checkout logid  (go back in time temporary at any commit)
 16-> git checkout master  (switch back to original branch)
 17-> git revert LOGID  (get back you in time permanentaly but for a single commit)
-18->
+18-> git log --oneline (displays all the message of all the commit at once)
+19-> git reset --hard LOGID (take back in time mulpile commit and set that as working directory and removes files and all the changes made after the selected LOGID)
+20-> git reset --soft LOGID (it makes your working directory in past time without removing any file and changes)
+21-> git reset --mixed LODID ((it makes your working directory in past time without removing any file but changes that are made are removed)
+22-> touch .gitignore (enter the names of file you want to ignore)
+23-> git rm -r --cached .  (to make .gitignore work and for removing the track of the ignored file)
+24-> 
