@@ -1,0 +1,8 @@
+1-> git init   (create new repository)
+2-> git status  (returns staging area)
+3-> git add directive_guide.txt  (add file to staging area)
+4-> touch file_name.extension  (to create new file)
+5-> git add . (for adding every untracked file to staging area)
+6-> git rm -f filename.extension (forcefully remove(completely delete) the file)
+7-> git rm --cached filename.extension (remove the file from staging area or untracked it)
+8-> 
