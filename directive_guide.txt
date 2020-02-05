@@ -1,3 +1,5 @@
+Must Git Commands for every Developer
+
 1-> git init   (create new repository)
 2-> git status  (returns staging area)
 3-> git add directive_guide.txt  (add file to staging area)
@@ -5,13 +7,17 @@
 5-> git add . (for adding every untracked file to staging area)
 6-> git rm -f filename.extension (forcefully remove(completely delete) the file)
 7-> git rm --cached filename.extension (remove the file from staging area or untracked it)
+
 8-> git config --global user.email "vivekrajs3999@gmail.com"
 9-> git config --global user.name "VRS-3999"
 10-> git --help
 11-> git commit --help
+
 12-> git commit -m "your messege"  (it keep record of your changes)
 13-> git commit -a -m "your messege" (committing untracked files)
+
 14-> git log  (displays all your commit)
+
 15-> git checkout logid  (go back in time temporary at any commit)
 16-> git checkout master  (switch back to original branch)
 17-> git revert LOGID  (get back you in time permanentaly but for a single commit)
@@ -21,4 +27,43 @@
 21-> git reset --mixed LODID ((it makes your working directory in past time without removing any file but changes that are made are removed)
 22-> touch .gitignore (enter the names of file you want to ignore)
 23-> git rm -r --cached .  (to make .gitignore work and for removing the track of the ignored file)
-24-> 
+24-> git branch branchName  (create newbrach)
+35-> git checkout -b branchName  (create new branch and switch to it)
+36-> git branch -a (list all the branch)
+37-> git branch -d branchName (delete the branch)
+38-> git merge branchName  (it merge branch to the current one)
+39-> forking (playing with other repositories)
+40-> download (.git is missing from source)
+41-> mkdir (to create new folder)
+42-> git remote add origin httpURL (connecting local origin to a link to access to your repository)
+43-> git remote -v (displays available function such as fetch/push)
+
+44-> add README.md
+45-> add LICENSE
+
+46-> git pull  (it will pull all the data and update our local repositories)
+47-> git pull <remote> <branchName>  ( it will pull data from particular branch and will update particular branch in local repositories,  remote = origin, branchName = master)
+48-> git branch --set-upstream-to=origin/<branch> master   (set tracking information for this branch)
+49-> rm -rf fileName   (to remove file)
+50-> rmdir fileName    (to remove file)
+
+51-> git push -u origin master   
+        git push -u origin master -f
+52-> git push --origin delete branchName  (delete branch on github)
+
+53->git commit -S -m "Adding a test file to new_branch"
+54->git config user.signingkey 35F5FFB2
+55->git config --global user.signingkey 35F5FFB2
+56->gpg --list-secret-keys --keyid-format LONG
+57->git config --global gpg.program gpg2
+
+In summary, if you want to contribute to a project, the simplest way is to:
+
+    Find a project you want to contribute to
+    Fork it
+    Clone it to your local system
+    Make a new branch
+    Make your changes
+    Push it back to your repo
+    Click the Compare & pull request button
+    Click Create pull request to open a new pull request
